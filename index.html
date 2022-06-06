@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Calculator CSS -->
+    <link rel="stylesheet" href="mystyle.css">
+    
+    <!-- Font famiy -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-light" style="background-color:var(--nav-background-color)">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" style="color:var(--nav-text-color)" href="#">Calculator</a>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+           <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+       </label>
+     </div>
+    </div>
+    </nav>
+
+ <div class="wrapper">
+      <div class="calculater">
+          <div class="calculater-header">
+            <!-- <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                   <input type="checkbox" id="checkbox" />
+                  <div class="slider round"></div>
+               </label>
+             </div> -->
+             
+          </div>
+          <div class="calulater-body">
+              <div>
+                  <p id="input"></p>
+                  <h1 id="output">0</h1>
+              </div>
+          </div>
+          <div class="calculater-footer">
+          <div onclick="calculate('C')" class="symbol"><span>C</span></div>
+          <div onclick="calculate('AC')" class="symbol"><span>AC</span></div>
+          <div onclick="calculate('%')" class="symbol"><span>%</span></div>
+          <div onclick="calculate('/')" class="symbol"><span>÷</span></div>
+          <div onclick="calculate('7')"><span>7</span></div>
+          <div onclick="calculate('8')"><span>8</span></div>
+          <div onclick="calculate('9')"><span>9</span></div>
+          <div onclick="calculate('*')" class="symbol"><span>×</span></div>
+          <div onclick="calculate('4')"><span>4</span></div>
+          <div onclick="calculate('5')"><span>5</span></div>
+          <div onclick="calculate('6')"><span>6</span></div>
+          <div onclick="calculate('-')" class="symbol"><span>-</span></div>
+          <div onclick="calculate('1')"><span>1</span></div>
+          <div onclick="calculate('2')"><span>2</span></div>
+          <div onclick="calculate('3')"><span>3</span></div>
+          <div onclick="calculate('+')" class="symbol"><span>+</span></div>
+          <div onclick="calculate('0')" ><span>0</span></div>
+          <div onclick="calculate('00')"><span>00</span></div>
+          <div onclick="calculate('.')"   ><span>.</span></div>
+          <div onclick="calculate('=')" class="symbol-dark"><span>=</span></div>
+        </div>
+     </div>
+  </div> 
+  <!-- Math.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.4.1/math.js"></script>
+  <!-- calculater.js -->
+  <script src="script.js"></script>
+</body>
+</html>
